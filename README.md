@@ -1,53 +1,3 @@
-# PDF Accessible AI System
-
-An AI-powered web application that converts non-accessible PDF documents into accessible, editable, and user-friendly HTML forms.  
-The system uses OCR and intelligent field detection to preserve layout accuracy while enabling accessibility and form interaction.
-
----
-
-## Problem Statement
-
-Many PDFs are scanned or poorly structured, making them inaccessible to:
-- Screen readers
-- Keyboard-only navigation
-- Users with disabilities
-
-This project addresses the issue by automatically converting PDFs into accessible HTML forms while preserving the original layout.
-
----
-
-## Features
-
-- Upload scanned or non-accessible PDFs
-- OCR-based text extraction
-- Automatic form field detection
-- Overlay editable fields on original PDF layout
-- Signature support (draw or upload JPG)
-- Feedback form handling
-- Firebase authentication
-- Save filled data back into a new PDF
-- Accessibility-friendly HTML output
-
----
-
-## Tech Stack
-
-### Backend
-- Python
-- Flask
-- Tesseract OCR
-- OpenCV
-- PDF processing libraries
-- Firebase Admin SDK
-
-### Frontend
-- HTML
-- CSS
-- JavaScript
-- Canvas API
-
----
-
 ## Project Structure
 # PDF Accessible AI System
 
@@ -179,3 +129,4 @@ PDF Accessible AI System
 
 ## License
 This project is intended for educational and academic use.
+
