@@ -71,13 +71,13 @@ python app.py
 Backend runs at:
 http://127.0.0.1:8000
 
-Frontend Usage
+## Frontend Usage
 
 Open the following file in a browser:
 
 frontend/pages/index.html
 
-Firebase Setup
+## Firebase Setup
 
 1.Create a Firebase project
 
@@ -87,11 +87,11 @@ Firebase Setup
 
 4.Place it inside the backend/ folder
 
-Sample PDF
+## Sample PDF
 
 A sample PDF is provided as Sample.pdf for testing upload and conversion.
 
-Technologies Used
+## Technologies Used
 
 1.Python
 
@@ -103,6 +103,7 @@ Technologies Used
 
 5.Canvas Overlay for PDF forms
 
-Author
+## Author
 
 Anjalee
+
