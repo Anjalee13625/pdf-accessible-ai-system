@@ -77,6 +77,8 @@ Open the following file in a browser:
 
 frontend/pages/index.html
 
+---
+
 ## Firebase Setup
 
 1.Create a Firebase project
@@ -106,4 +108,5 @@ A sample PDF is provided as Sample.pdf for testing upload and conversion.
 ## Author
 
 Anjalee
+
 
