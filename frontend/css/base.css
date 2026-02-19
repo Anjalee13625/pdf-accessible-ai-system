@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #020617);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card container */
+.card {
+  background: rgba(255, 255, 255, 0.96);
+  color: #0f172a;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.4);
+}
+
+.editor-card {
+  width: 760px;
+  max-width: 95%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* -------- PDF FORM LOOK -------- */
+.pdf-form {
+  background: #ffffff;
+  padding: 40px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+.pdf-form label {
+  font-weight: 600;
+  display: block;
+  margin-top: 16px;
+}
+
+.pdf-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #cbd5f5;
+}
+#signatureBox {
+  position: absolute;
+}
+
+#signatureUpload {
+  margin-top: 6px;
+  font-size: 12px;
+}
+
+#signaturePad {
+  border: 1px solid #444;
+}
+
+
+/* -------- CONTROLS -------- */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.secondary {
+  background: #475569;
+}
+
+.secondary:hover {
+  background: #334155;
+}
+
+/* -------- PRINT RULES -------- */
+@media print {
+  body {
+    background: white !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .card {
+    box-shadow: none !important;
+    border: none !important;
+  }
+}
+/* ===============================
+   Upload Page Fix
+================================ */
+
+.upload-card {
+  width: 560px;
+  padding: 36px;
+  text-align: center;
+}
+
+/* File input */
+.upload-card input[type="file"] {
+  display: block;
+  margin: 20px auto 30px auto;
+  font-size: 15px;
+}
+
+/* Buttons */
+.upload-card button {
+  display: block;
+  width: 100%;
+  margin-top: 14px;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+/* Secondary button */
+.upload-card .secondary {
+  background: #475569;
+}

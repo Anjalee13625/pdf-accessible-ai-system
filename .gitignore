@@ -1,0 +1,18 @@
+# ===== Python =====
+__pycache__/
+*.pyc
+
+# ===== Virtual Environment =====
+venv/
+backend/venv/
+
+# ===== Uploads =====
+backend/uploads/
+backend/static/uploads/
+
+# ===== Firebase Secrets =====
+serviceAccountKey.json
+backend/serviceAccountKey.json
+
+# ===== VS Code =====
+.vscode/

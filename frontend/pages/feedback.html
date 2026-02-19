@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="../css/base.css">
+</head>
+<body>
+
+<div class="card" style="width: 600px;">
+  <h2>Feedback</h2>
+
+  <!-- Rating -->
+  <label for="rating">Rate your experience</label>
+  <select id="rating" aria-label="Rating">
+    <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+    <option value="4">⭐⭐⭐⭐ Very Good</option>
+    <option value="3">⭐⭐⭐ Good</option>
+    <option value="2">⭐⭐ Average</option>
+    <option value="1">⭐ Poor</option>
+  </select>
+
+  <!-- Feedback text -->
+  <label for="comment">Your Feedback</label>
+  <textarea
+    id="comment"
+    aria-label="Feedback comments"
+    placeholder="Write your feedback…"
+    rows="5"></textarea>
+
+  <!-- Actions -->
+  <button onclick="submitFeedback()">Submit Feedback</button>
+
+  <button class="secondary" onclick="location.href='dashboard.html'">
+    Back
+  </button>
+</div>
+
+<script>
+function submitFeedback() {
+  const rating = document.getElementById("rating").value;
+  const comment = document.getElementById("comment").value;
+
+  if (!comment.trim()) {
+    alert("Please enter your feedback.");
+    return;
+  }
+
+  // later: send to backend / Firebase
+  console.log("Rating:", rating);
+  console.log("Comment:", comment);
+
+  alert("Thank you for your feedback!");
+}
+</script>
+
+</body>
+</html>

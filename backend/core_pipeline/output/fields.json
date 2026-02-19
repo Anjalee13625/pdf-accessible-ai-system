@@ -1,0 +1,28 @@
+[
+  {
+    "label": "Name",
+    "type": "text"
+  },
+  {
+    "label": "Gender",
+    "type": "radio",
+    "options": [
+      "Male",
+      "Female",
+      "Other"
+    ]
+  },
+  {
+    "label": "Skills",
+    "type": "checkbox",
+    "options": [
+      "Python",
+      "ML",
+      "Web"
+    ]
+  },
+  {
+    "label": "Signature",
+    "type": "text"
+  }
+]
