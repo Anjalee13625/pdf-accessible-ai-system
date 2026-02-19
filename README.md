@@ -1,6 +1,18 @@
-# Accessible PDF Editor (AI-Based)
+# PDF Accessible AI System
 
-An AI-powered web application that converts non-accessible PDFs into fully editable and accessible PDF forms.
+An AI-powered web application that converts non-accessible PDF documents into accessible, editable, and user-friendly HTML forms.  
+The system uses OCR and intelligent field detection to preserve layout accuracy while enabling accessibility and form interaction.
+
+---
+
+## Problem Statement
+
+Many PDFs are scanned or poorly structured, making them inaccessible to:
+- Screen readers
+- Keyboard-only navigation
+- Users with disabilities
+
+This project addresses the issue by automatically converting PDFs into accessible HTML forms while preserving the original layout.
 
 ---
 
@@ -8,106 +20,162 @@ An AI-powered web application that converts non-accessible PDFs into fully edita
 
 - Upload scanned or non-accessible PDFs
 - OCR-based text extraction
-- Auto-detection of form fields
-- Editable accessible form generation
-- Overlay form fields on original PDF layout
-- Signature upload (JPG/PNG)
-- Save filled data into a new PDF
-- Firebase authentication (Login/Register)
-- Accessible and clean UI
+- Automatic form field detection
+- Overlay editable fields on original PDF layout
+- Signature support (draw or upload JPG)
+- Feedback form handling
+- Firebase authentication
+- Save filled data back into a new PDF
+- Accessibility-friendly HTML output
+
+---
+
+## Tech Stack
+
+### Backend
+- Python
+- Flask
+- Tesseract OCR
+- OpenCV
+- PDF processing libraries
+- Firebase Admin SDK
+
+### Frontend
+- HTML
+- CSS
+- JavaScript
+- Canvas API
+
+---
+
+## Project Structure
+# PDF Accessible AI System
+
+An AI-powered web application that converts non-accessible PDF documents into accessible, editable, and user-friendly HTML forms.  
+The system uses OCR and intelligent field detection to preserve layout accuracy while enabling accessibility and form interaction.
+
+---
+
+## Problem Statement
+
+Many PDFs are scanned or poorly structured, making them inaccessible to:
+- Screen readers
+- Keyboard-only navigation
+- Users with disabilities
+
+This project addresses the issue by automatically converting PDFs into accessible HTML forms while preserving the original layout.
+
+---
+
+## Features
+
+- Upload scanned or non-accessible PDFs
+- OCR-based text extraction
+- Automatic form field detection
+- Overlay editable fields on original PDF layout
+- Signature support (draw or upload JPG)
+- Feedback form handling
+- Firebase authentication
+- Save filled data back into a new PDF
+- Accessibility-friendly HTML output
+
+---
+
+## Tech Stack
+
+### Backend
+- Python
+- Flask
+- Tesseract OCR
+- OpenCV
+- PDF processing libraries
+- Firebase Admin SDK
+
+### Frontend
+- HTML
+- CSS
+- JavaScript
+- Canvas API
 
 ---
 
 ## Project Structure
 
-PDF-Accessible-AI/
+pdf-accessible-ai-system/
 │
 ├── backend/
+│ ├── core_pipeline/
+│ │ ├── ai_pipeline.py
+│ │ ├── field_extractor.py
+│ │ ├── html_generator.py
+│ │ ├── ocr_utils.py
+│ │ ├── pdf_utils.py
+│ │ └── run_pipeline.py
+│ │
+│ ├── routes/
+│ │ ├── auth.py
+│ │ ├── upload.py
+│ │ └── feedback.py
+│ │
 │ ├── app.py
 │ ├── firebase.py
 │ ├── requirements.txt
-│ ├── serviceAccountKey.json
-│ ├── core_pipeline/
-│ │ ├── main.py
-│ │ ├── pdf_utils.py
-│ │ ├── ocr_utils.py
-│ │ └── run_pipeline.py
-│ └── static/
-│ └── uploads/
+│ └── test_firebase.py
 │
 ├── frontend/
 │ ├── css/
-│ │ ├── base.css
-│ │ └── editor.css
 │ ├── js/
-│ │ ├── auth.js
-│ │ ├── upload.js
-│ │ ├── editor.js
-│ │ └── firebase.js
-│ └── pages/
-│ ├── index.html
-│ ├── login.html
-│ ├── register.html
-│ ├── dashboard.html
-│ ├── upload.html
-│ ├── editor.html
-│ └── feedback.html
+│ ├── pages/
+│ └── index.html
 │
 ├── Sample.pdf
-└── README.md
+├── README.md
+└── .gitignore
 
 
 ---
+## Installation and Setup
+
+### Clone Repository
+git clone https://github.com/Anjalee13625/pdf-accessible-ai-system.git
+cd pdf-accessible-ai-system
+
 
 ## Backend Setup
 
-```bash
 cd backend
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
-python app.py
-
-Backend runs at:
-http://127.0.0.1:8000
-
-## Frontend Usage
-
-Open the following file in a browser:
-
-frontend/pages/index.html
-
----
 
 ## Firebase Setup
+1)Create a Firebase project
+2)Enable Email/Password Authentication
+3)Download serviceAccountKey.json
+4)Place it inside the backend/ folder
+5)Do NOT upload this file to GitHub (ignored in .gitignore)
 
-1.Create a Firebase project
+## Run the Application
 
-2.Enable Email/Password authentication
+python app.py
 
-3.Download serviceAccountKey.json
+Open in browser:
+http://localhost:5000
 
-4.Place it inside the backend/ folder
+## Security Notes
+1)serviceAccountKey.json is excluded using .gitignore
+2)Virtual environments are not committed
+3)Uploaded files are ignored from version control
 
-## Sample PDF
-
-A sample PDF is provided as Sample.pdf for testing upload and conversion.
-
-## Technologies Used
-
-1.Python
-
-2.OCR (PDF Text Extraction)
-
-3.HTML, CSS, JavaScript
-
-4.Firebase Authentication
-
-5.Canvas Overlay for PDF forms
+## Use Cases
+1)Accessible document generation
+2)Assistive technology systems
+3)Educational institutions
+4)Government and public services
 
 ## Author
-
 Anjalee
+PDF Accessible AI System 
 
-
-
+## License
+This project is intended for educational and academic use.
